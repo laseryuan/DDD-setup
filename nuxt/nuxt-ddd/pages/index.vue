@@ -28,8 +28,15 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      let x = 1
+      // debugger
+    })
   }
 }
+
 </script>
 
 <style>
