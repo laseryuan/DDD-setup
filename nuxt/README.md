@@ -7,11 +7,6 @@ cd $PROJECT_NAME
 npm run dev
 ```
 
-1. Install crconsole
-```
-sudo npm install crconsole
-```
-
 # DDD
 1. Start the chrome browser
 ```
@@ -35,7 +30,7 @@ tag in vue component
 
 1. Connect crconsole
 ```
-crconsole
+docker run --name=crconsole --rm -it --net=host --pid=host lasery/crconsole:18.10
 .tabs
 .switch  # to the page tab
 ```
